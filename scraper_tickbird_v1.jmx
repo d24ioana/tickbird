@@ -386,6 +386,7 @@ var id = vars.get(&quot;ids_&quot;+k);
 var link =&quot;https://tickbird.org/careers#&quot;+id+&quot;&quot;;
 log.info(link);
 var city = vars.get(&quot;cities_&quot;+k);
+city = city.replaceAll(&apos;Cluj Napoca&apos;,&apos;Cluj-Napoca&apos;);
 log.info(city);
 var company = vars.get(&quot;company&quot;);
 String job=&apos;{&quot;id&quot;: &quot;&apos;+guid+&apos;&quot;,&quot;job_title&quot;: &quot;&apos;+title+&apos;&quot;,&quot;job_link&quot;: &quot;&apos;+link+&apos;&quot;, &quot;company&quot;: &quot;&apos;+company+&apos;&quot;,    &quot;country&quot;: &quot;România&quot;,&quot;city&quot;: &quot;&apos;+city+&apos;&quot; }&apos;;
